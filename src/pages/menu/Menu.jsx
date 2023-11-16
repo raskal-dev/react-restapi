@@ -27,7 +27,12 @@ const Menu = () => {
                         </Link>
                     </li>
                     <li>
-
+                        <Link 
+                            to="/todo"
+                            onClick={() => handleClicl('/todo')}
+                        >
+                            <span className="text-label">To Do</span>
+                        </Link>
                     </li>
                     <li>
 
