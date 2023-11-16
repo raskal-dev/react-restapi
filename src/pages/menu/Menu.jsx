@@ -23,10 +23,19 @@ const Menu = () => {
                             to="/"
                             onClick={() => handleClicl('/')}
                         >
+                            <h1 className="text-label">Cours</h1>
+                        </Link>
+                    </li>
+                    <li className={`list $(activeLink === '/' ? 'active' : '')`}>
+                        <Link
+                            aria-current="page"
+                            to="/"
+                            onClick={() => handleClicl('/')}
+                        >
                             <span className="text-label">Home</span>
                         </Link>
                     </li>
-                    <li>
+                    <li className={`list $(activeLink === '/' ? 'active' : '')`}>
                         <Link 
                             to="/todo"
                             onClick={() => handleClicl('/todo')}
